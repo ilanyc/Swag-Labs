@@ -1,6 +1,6 @@
 package com.SwagLabs.TestCases;
 
-
+import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.WebDriver;
@@ -27,6 +27,7 @@ public class BaseTest {
         lp = new LoginPage(driver);
         ip = new InventoryPage(driver);
         screenshot = new ScreenshotOfTest(driver);
+        
 	}
 	
 	@AfterMethod
